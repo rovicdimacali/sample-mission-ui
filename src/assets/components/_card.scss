@@ -1,0 +1,95 @@
+.card {
+  min-height: 120px;
+  background: #fffef9;
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 4px;
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  margin-bottom: 15px;
+
+  @include lg-phone {
+    width: 100%;
+  }
+
+  @include m-phone {
+    width: 100%;
+  }
+
+  @include sm-phone {
+    width: 100%;
+  }
+
+  .card-col {
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .mission-info {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 60px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      align-items: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .mission-name-progress {
+        font-family: 'Segoe UI', sans-serif;
+        color: #656565;
+        align-items: start;
+
+        p {
+          margin: 0;
+          font-size: 15px;
+        }
+
+        .p-progressbar {
+          width: 180px;
+          height: 10px;
+          margin-top: 5px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          .p-progressbar-value {
+            background: rgb(91, 215, 213);
+            background: linear-gradient(
+              180deg,
+              rgba(91, 215, 213, 1) 0%,
+              rgba(91, 215, 213, 1) 27%,
+              rgba(61, 172, 170, 1) 55%,
+              rgba(7, 156, 154, 1) 78%,
+              rgba(176, 235, 239, 1) 100%
+            );
+          }
+          .p-progressbar-label {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .mission-reward {
+      flex: 0 0 auto;
+      width: 100%;
+      border-radius: 10px;
+      height: 60px;
+      border-radius: 5px;
+      background-color: #fdf1d7;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
