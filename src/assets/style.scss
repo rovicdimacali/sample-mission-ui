@@ -1,9 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.cdnfonts.com/css/funhouse');
 
 @import './breakpoints/breakpoints';
 @import './components/card';
 @import './home/home';
-
+@import './layout/topbar';
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +15,6 @@ body {
   width: calc(100% - 9rem);
   margin-left: 70px;
   position: relative;
-  top: 70px;
   padding: 10px;
   overflow-x: hidden;
   overflow-y: auto;

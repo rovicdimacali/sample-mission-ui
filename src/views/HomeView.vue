@@ -1,5 +1,6 @@
 <template>
   <div class="mission-body">
+    <TopBar />
     <div class="container">
       <div class="wrap">
         <div class="card">
@@ -142,4 +143,12 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import TopBar from '@/layout/TopBar.vue'
+
+export default {
+  components: {
+    TopBar
+  }
+}
+</script>
